@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardiocare Heart Clinic - Dr. Shrikant Naigude</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-top">
+        <div class="container">
+          <div class="logo">
+            <img
+              src="/static/DOCTOR.png"
+              alt="Cardiocare Heart Clinic Logo"
+              class="logo-img"
+            />
+            <div>
+              <h1>Cardiocare Heart Clinic</h1>
+              <p>Dr. Shrikant Naigude - M.B.B.S, M.D., D.M. (Cardiology)</p>
+            </div>
+          </div>
+          <div class="header-contact-details">
+            <div class="contact-item">
+              <div class="icon-circle">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-text">
+                <strong>Phone No</strong>
+                <span>9921064838</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="icon-circle">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <strong>Email Id</strong>
+                <span>shrikantnaigude13@gmail.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="header-actions">
+            <a href="#contact" class="btn-appointment">APPOINTMENTS</a>
+          </div>
+          <!-- Mobile Navigation Toggle -->
+          <button class="mobile-nav-toggle " aria-label="Open navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <nav class="header-nav">
+        <div class="container">
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li class="dropdown">
+              <a href="#services"
+                >Services <i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="complex-coronary-angioplasty.html">Complex Coronary Angioplasty</a></li>
+                <li><a href="peripheral-angioplasty.html">Peripheral Angioplasty</a></li>
+                <li><a href="tavr.html">Transcatheter Aortic Valve Replacement</a></li>
+                <li><a href="pacemaker.html">Pacemaker, CRT & ICDs Implantation</a></li>
+                <li><a href="heart-failure.html">Heart Failure Treatments Optimization</a></li>
+                <li><a href="ep-study.html">EP Study and Radiofrequency Ablation</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="hospital-affiliations.html">Hospital Affiliations</a>
+            </li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container-hero">
+        <div class="hero-content">
+          <h2>Cardiology</h2>
+          <p>
+            Cardiology is a branch of medicine that deals with the disorders of
+            the heart and blood vessels. It focuses on the diagnosis, treatment,
+            and prevention of heart diseases including coronary artery disease,
+            heart failure, arrhythmias, and congenital heart defects.
+            Cardiologists use advanced diagnostic techniques and treatments to
+            help patients maintain heart health.
+          </p>
+          <a href="cardiology.html" class="btn-read-more ">READ MORE</a>
+        </div>
+
+        <div class="hero-images">
+          <video class="main-hero-video" autoplay loop muted playsinline>
+            <source src="/static/homepage_video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container-content about-section">
+        <div class="about-content">
+          <div class="section-icon-container">
+            <div class="section-icon">
+              <i class="fas fa-user-md"></i>
+            </div>
+          </div>
+          <h2>DR. SHRIKANT NAIGUDE</h2>
+          <h3>MBBS, MD-General Medicine, DM-Cardiology</h3>
+          <p>
+            Dr. Shrikant Naigude is an Interventional Cardiologist, born and
+            bought up in New Mumbai. He completed his schooling from JNPV School
+            and Jr College from ASC College Panvel. He has done his MBBS from
+            Grant Medical College, JJ hospital Mumbai where he passed in first
+            Class. He completed his MD General Medicine form M.P. Shah Govt
+            Medical College, Jamnagar, Gujarat, where he secured Gold Medal in
+            Final Degree Examination. He did His  DM CARDIOLOGY from KEM Hospital
+            , Ahmedabad.
+          </p>
+          <a href="#" class="btn-read-more-about">READ MORE</a>
+        </div>
+        <div class="about-image">
+          <img
+            src="/static/cardio-doctor.jpg"
+            alt="Dr. Shrikant Naigude"
+            onerror="this.onerror=null;this.src='https://placehold.co/400x500/E0F2F1/333333?text=Doctor+Image';"
+          />
+          <!-- <div class="experience-badge">
+            <i class="fas fa-stethoscope"></i>
+            <h4>10 +</h4>
+            <p>Years Of Experience</p>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section light-bg">
+      <div class="container-content services-container">
+        <h2 class="section-title">Cardiology <span>Treatment</span></h2>
+        <div class="services-slider">
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon"><i class="fas fa-heart-pulse"></i></div>
+              <h3>Complex Coronary Angioplasty</h3>
+              <p>
+                Complex angioplasties are done in various challenging situations
+                like percutaneous interventions after coronary artery bypass
+                surgery...
+              </p>
+              <a
+                href="complex-coronary-angioplasty.html"
+                class="service-read-more"
+                >READ MORE <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+            
+            <div class="service-card">
+              
+              <div class="service-icon"><i class="fas fa-shoe-prints"></i></div>
+              <h3>Peripheral Angioplasty</h3>
+              <p>
+                Peripheral Angioplasty is a procedure that opens up narrowed or
+                blocked peripheral arteries (arteries not supplying the brain or
+                heart)...
+              </p>
+              <a href="peripheral-angioplasty.html" class="service-read-more"
+                >READ MORE <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="service-card">
+
+              <div class="service-icon"><i class="fas fa-heart-pulse"></i> <i class="fas fa-syringe"></i></div>
+              <h3>Transcatheter Aortic Valve Replacement</h3>
+              <p>
+                Transcatheter aortic valve replacement (TAVR) is a minimally
+                invasive heart procedure to replace a thickened aortic valve.
+              </p>
+              <a href="tavr.html" class="service-read-more"
+                >READ MORE <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-heart-pulse"></i> <i class="fas fa-syringe"></i> <i class="fas fa-user-md"></i>
+
+              </div>
+              <h3>Pacemaker, CRT & ICDs Implantation</h3>
+              <p>
+                Cardiac resynchronization therapy is a procedure to implant a
+                device in the chest to make the heart's chambers squeeze
+                (contract).
+              </p>
+              <a href="pacemaker.html" class="service-read-more"
+                >READ MORE <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-heart-pulse"></i> <i class="fas fa-pills"></i> <i class="fas fa-chart-line"></i>
+
+              </div>
+              <h3>Heart Failure Treatments Optimization</h3>
+              <p>
+                Optimal Medical Therapy refers to group of medications for
+                Heart, High BP, Cholesterol lowering and Blood thinners which
+                prevent sudden...
+              </p>
+              <a href="heart-failure.html" class="service-read-more"
+                >READ MORE <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="service-card">
+              <div class="service-icon"><i class="fas fa-wave-square"></i></div>
+              <h3>EP Study And Radiofrequency Ablation</h3>
+              <p>
+                Although relatively new, Cardiac Electrophysiology is one of the
+                fastest progressing fields in medicine. Cardiac
+                Electrophysiology (EP) is the study.
+              </p>
+              <a href="ep-study.html" class="service-read-more"
+                >READ MORE <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <button class="slider-arrow prev-arrow" disabled>
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <button class="slider-arrow next-arrow">
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- New Testimonial Section -->
+    <section id="testimonials" class="section testimonial-section-new">
+      <div class="container-content">
+        <h2 class="section-title-new">What Our Patients Say</h2>
+        <div class="testimonial-slider-container">
+          <div class="testimonial-wrapper">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p class="quote-icon">“</p>
+                <p class="testimonial-text">
+                  Dr. Naigude's expertise is unmatched. He was thorough,
+                  patient, and explained everything clearly. Highly recommended
+                  for any cardiac concerns.
+                </p>
+                <p class="testimonial-author-new">- Sunil Chavan</p>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p class="quote-icon">“</p>
+                <p class="testimonial-text">
+                  The care and attention to detail I received were exceptional.
+                  The entire process from consultation to recovery was smooth
+                  and reassuring. Thank you!
+                </p>
+                <p class="testimonial-author-new">- Priya Sharma</p>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p class="quote-icon">“</p>
+                <p class="testimonial-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s.
+                </p>
+                <p class="testimonial-author-new">- Rupal Karwa</p>
+              </div>
+            </div>
+          </div>
+          <button class="testimonial-nav-arrow prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="testimonial-nav-arrow next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <div class="testimonial-dots"></div>
+      </div>
+    </section>
+
+    <!-- New Gallery Section -->
+    <section id="gallery" class="section">
+      <div class="container-content">
+        <h2 class="section-title-new gallery-title">Our Gallery</h2>
+        <!-- START: Gallery Slider Structure -->
+        <div class="gallery-slider-container">
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img
+                src="https://tse3.mm.bing.net/th/id/OIP.QH-tTdcP8qZQyZl1aBJ1zwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Event Photo 1"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://tse4.mm.bing.net/th/id/OIP.ylZUZVeeuXIeza0GYQOjxwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Event Photo 2"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://tse2.mm.bing.net/th/id/OIP.bgjP0ixeLPIFceHYEEHOqAHaE7?w=2000&h=1333&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Patient Interaction"
+              />
+            </div>
+          </div>
+          <button class="gallery-arrow prev" aria-label="Previous image">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="gallery-arrow next" aria-label="Next image">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <!-- END: Gallery Slider Structure -->
+      </div>
+    </section>
+
+    <!-- New Appointment Section -->
+    <section id="contact" class="section light-bg">
+      <div class="container-content">
+        <div class="appointment-wrapper">
+          <div class="contact-info-box">
+            <div class="info-block">
+              <h3><i class="fas fa-clock"></i> Clinic Hours</h3>
+              <p><strong>Mon - Sat:</strong> 8:00 PM - 10:00 PM</p>
+              <p><strong>Tue - Fri:</strong> 11:00 AM - 1:00 PM</p>
+            </div>
+            <div class="info-block">
+              <h3><i class="fas fa-info-circle"></i> Contact Information</h3>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> Shop No. 3, Anandgham
+                Society, Panvel, Navi Mumbai, Maharashtra 410206
+              </p>
+              <p><i class="fas fa-phone-alt"></i> +91 9921064838</p>
+              <p><i class="fas fa-envelope"></i> shrikantnaigude13@gmail.com</p>
+            </div>
+          </div>
+          <div class="appointment-form-box">
+            <h2>Book Your Appointment</h2>
+            <form id="contactForm">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
+                required
+              />
+              <select name="consultancy-type" required>
+                <option value="" disabled selected>
+                  Select Consultancy Type
+                </option>
+                <option value="first-time">First-Time Consultation</option>
+                <option value="follow-up">Follow-Up</option>
+                <option value="second-opinion">Second Opinion</option>
+                <option value="emergency">Emergency</option>
+              </select>
+              <textarea
+                name="message"
+                placeholder="Your Message (Optional)"
+              ></textarea>
+              <button type="submit" class="btn-submit">Submit Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Thank You!</h3>
+        <p>
+          Your message has been sent successfully. We'll get back to you
+          shortly.
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+     <div class="footer">
+    <footer class="new-footer ">
+      <div class="container-content">
+        <div class="footer-top">
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+91 9921064838</span>
+          </div>
+          <!-- <div class="footer-contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+91 7227874040</span>
+          </div> -->
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>shrikantnaigude13@gmail.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span
+              >Shop No. 3, Anandgham Society, Panvel, Navi Mumbai, Maharashtra
+            </span>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-title">Our Services</h3>
+          <div class="footer-links-grid">
+            <a href="complex-coronary-angioplasty.html"
+              >Complex Coronary Angioplasty</a
+            >
+            <a href="peripheral-angioplasty.html">Peripheral Angioplasty</a>
+            <a href="tavr.html">Transcatheter Aortic Valve Replacement</a>
+            <a href="pacemaker.html">Pacemaker, CRT & ICDs Implantation</a>
+            <a href="heart-failure.html"
+              >Heart Failure Treatments Optimization</a
+            >
+            <a href="ep-study.html">EP Study and Radiofrequency Ablation</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-title">Quick Links</h3>
+          <div class="footer-links-inline">
+            <a href="/#home">Home</a>
+            <a href="/#about">About Us</a>
+            <a href="/#services">Services</a>
+            <a href="hospital-affiliations.html">Hospital Affiliations</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Dr. Shrikant Naigude, All Right Reserved.</p>
+      </div>
+      <a href="#" class="back-to-top" aria-label="Back to top"
+        ><i class="fas fa-chevron-up"></i
+      ></a>
+    </footer>
+    </div>
+
+    <!-- Mobile Navigation Panel -->
+    <div id="mobile-nav" class="sidenav">
+      <a href="javascript:void(0)" class="close-btn">&times;</a>
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About Us</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="hospital-affiliations.html" class="nav-link"
+        >Hospital Affiliations</a
+      >
+      <a href="#testimonials" class="nav-link">Testimonials</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#contact" class="nav-link">Contact Us</a>
+    </div>
+    <div id="sidenav-overlay" class="sidenav-overlay"></div>
+
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/script.js"></script>
+  </body>
+</html>
