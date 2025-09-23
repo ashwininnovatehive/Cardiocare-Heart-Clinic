@@ -1357,6 +1357,7 @@ header {
         width: 100%;
         margin: 0 15px;
     }
+    
     .slider-arrow {
         display: block;
         top: 50%;
@@ -1636,6 +1637,14 @@ header {
         font-size: 2rem;
     }
     
+    .treatment-layout {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .treatment-content, .sidebar {
+        width: 100%;
+        flex: none;
+    }
     .treatment-content h3 {
         font-size: 1.4rem;
     }
@@ -1696,7 +1705,7 @@ header {
     }
     
     .service-card {
-        margin: 0 5px;
+        margin: 0 0px;
         padding: 20px 15px;
     }
     .service-card h3 {
