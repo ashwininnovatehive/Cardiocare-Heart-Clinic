@@ -1,58 +1,27 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, flash, redirect, url_for
 
 app = Flask(__name__)
+app.secret_key = 'your_secret_key_here'  # Change this to a secure secret key
 
 @app.route('/')
 def home():
-    return render_template('index.html')  # This will load templates/index.html
+    return render_template('index.html')
 
-@app.route('/cardiology.html')
-def cardiology():
-    return render_template('cardiology.html')
-
-@app.route('/complex-coronary-angioplasty.html')
-def complex_coronary_angioplasty():
-    return render_template('complex-coronary-angioplasty.html')
-
-@app.route('/ep-study.html')
-def ep_study():
-    return render_template('ep-study.html')
-
-@app.route('/heart-failure.html')
-def heart_failure():
-    return render_template('heart-failure.html')
-
-@app.route('/hospital-affiliations.html')
-def hospital_affiliations():
-    return render_template('hospital-affiliations.html')
-
-@app.route('/pacemaker.html')
-def pacemaker():
-    return render_template('pacemaker.html')
-
-@app.route('/peripheral-angioplasty.html')
-def peripheral_angioplasty():
-    return render_template('peripheral-angioplasty.html')
-
-@app.route('/tavr.html')
-def tavr():
-    return render_template('tavr.html')
-
-@app.route('/about.html')
-def about():
-    return render_template('about.html')
-
-@app.route('/testimonials.html')
-def testimonials():
-    return render_template('testimonials.html')
-
-@app.route('/gallery.html')
-def gallery():
-    return render_template('gallery.html')
-
-@app.route('/contact.html')
+@app.route('/contact', methods=['POST'])
 def contact():
-    return render_template('contact.html')
+    if request.method == 'POST':
+        name = request.form.get('name')
+        email = request.form.get('email')
+        phone = request.form.get('phone')
+        consultancy_type = request.form.get('consultancy-type')
+        message = request.form.get('message')
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0",port=5000)
+        # Here you can add logic to send email, save to database, etc.
+        # For now, just print to console and flash a message
+        print(f"New appointment request: {name}, {email}, {phone}, {consultancy_type}, {message}")
+
+        flash('Your message has been sent successfully. We\'ll get back to you shortly.', 'success')
+        return redirect(url_for('home'))
+
+if __name__ == '__main__':
+    app.run(debug=True)
