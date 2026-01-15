@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const endingOverlay = document.getElementById('ending-overlay');
     const timerElement = document.getElementById('timer');
     const countdownElement = document.getElementById('countdown');
+    const splashElement = document.getElementById('splash');
     const mainContainer = document.getElementById('main-container');
 
     // Target date: 16th Jan 2026 00:00 IST
@@ -80,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 lyricElement.style.animation = 'lyricFade 4s ease-in-out';
             }, 10);
             currentLyricIndex++;
-            setTimeout(displayLyrics, 4000); // 4s per line
+            setTimeout(displayLyrics, 1700); // 4s per line
         } else {
             setTimeout(() => {
                 endingOverlay.classList.add('active');
@@ -88,6 +89,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Start countdown
-    updateTimer();
+    // Show splash for 6 seconds, then countdown
+    setTimeout(() => {
+        splashElement.style.display = 'none';
+        countdownElement.style.display = 'block';
+        updateTimer();
+    }, 6000);
 });
