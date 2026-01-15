@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 lyricElement.style.animation = 'lyricFade 4s ease-in-out';
             }, 10);
             currentLyricIndex++;
-            setTimeout(displayLyrics, 4000); // 4s per line
+            setTimeout(displayLyrics, 1000); // 4s per line
         } else {
             setTimeout(() => {
                 endingOverlay.classList.add('active');
@@ -91,3 +91,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // Start countdown
     updateTimer();
 });
+
