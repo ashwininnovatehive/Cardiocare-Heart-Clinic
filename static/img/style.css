@@ -17,6 +17,26 @@ body {
     align-items: center;
 }
 
+.splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #FFFACD, #FFFFE0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.splash h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #333;
+}
+
 .countdown {
     position: fixed;
     top: 0;
@@ -240,6 +260,10 @@ body {
 
     .ending-date {
         font-size: 1.2rem;
+    }
+
+    .splash h1 {
+        font-size: 2.5rem;
     }
 
     .countdown h1 {
