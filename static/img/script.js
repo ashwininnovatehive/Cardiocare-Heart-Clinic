@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const splashElement = document.getElementById('splash');
     const mainContainer = document.getElementById('main-container');
 
-    // Target date: 16th Jan 2026 00:00 IST
-    const targetDate = new Date('2026-01-16T00:00:00+05:30');
+    // Target date: 10 seconds from now for testing
+    const targetDate = new Date(Date.now() + 10000);
 
     // Lyrics array with emojis
     const lyrics = [
